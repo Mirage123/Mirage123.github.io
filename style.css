@@ -136,7 +136,7 @@ hr {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 90%; /* Adjust as needed for phone layout */
+    max-width: 70%; /* Adjust as needed for phone layout */
   }
   .new-section .text-content h1 {
     font-size: 1.5em;  /* Adjust font size for smaller screens */
