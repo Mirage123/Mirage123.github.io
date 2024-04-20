@@ -80,30 +80,29 @@ nav a i {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  display: flex; /* Removed unnecessary height style */
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;  /* Stack elements vertically for smaller screens -->
   align-items: center;
-  background-color: #FFFFFF; /* Changed background color */
 }
 
 /* New Section styles (assuming this is for the section after search bar) */
 
 .new-section {
-  background-color: #FFDADA;  /* Background color as per your request */
-  padding: 50px 0;  /* Padding as per your request */
+  background-color: #FFDADA;
+  padding: 50px 0;
 }
 
 .new-section .container {
-  flex-direction: column;  /* Stack elements vertically */
-  align-items: center;  /* Center text content horizontally */
+  flex-direction: column;
+  align-items: center;
 }
 
 .new-section .text-content {
-  flex: 1 0 auto;  /* Allow text content to grow vertically but not shrink */
+  flex: 1 0 auto;
   padding: 0 20px;
   display: flex;
-  flex-direction: column; /* Stack text elements vertically */
-  justify-content: center;  /* Center text content vertically within the image height */
+  flex-direction: column;
+  justify-content: center;
 }
 
 .new-section .text-content h1 {
@@ -115,82 +114,44 @@ nav a i {
 
 .new-section .text-content p {
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 16px;  /* Adjust for better readability on smaller screens -->
   line-height: 1.5;
   text-align: center;
 }
 
 .new-section img {
-  width: 100%;  /* Make image full width of container -->
+  width: 100%;
   object-fit: cover;
-  margin-top: 30px;  /* Add 30px space between text and image -->
+  margin-top: 30px;
 }
 
 /* Hide the horizontal divider line */
 hr {
   display: none;
 }
-/* Existing CSS styles */
 
-/* ... */
+/* Responsive Design for Phone Screens */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+  /* Adjustments for larger phone screens (optional) */
   .container {
-    max-width: 40%; /* Adjust as needed for phone layout */
-  }
-  .new-section .text-content h1 {
-    font-size: 1.5em;  /* Adjust font size for smaller screens */
+    max-width: 80%;  /* Adjust as needed */
   }
   .new-section .text-content p {
-    font-size: 8px;  /* Adjust font size for smaller screens */
-  }
-  .new-section img {
-    margin-top: 10px;  /* Adjust spacing for smaller screens */
+    font-size: 14px;  /* Adjust font size for readability */
   }
 }
-/* Existing styles for header and footer (replace with your actual styles) */
 
-.new-section {
-  background-color: #FFDADA;
-  padding: 50px 0;
-}
+@media screen and (max-width: 600px) {
+  /* Adjustments for smaller phone screens */
+  .container {
+    max-width: 40%; /* Adjust as needed */
+  }
+  .new-section .text-content h1 {
+    font-size: 1.5em;
+  }
+  .new-section .text-content p {
+    font-size: 12px;  /* Adjust font size for readability */
+  }
+  .new-
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;  /* Stack elements vertically -->
-  align-items: center;
-}
-
-.text-content {
-  flex: 1 0 auto;  /* Allow text content to grow but not shrink -->
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;  /* Stack text elements vertically -->
-  justify-content: center;  /* Center text content vertically within the image height -->
-}
-
-.text-content h1 {
-  font-family: Arial, sans-serif;
-  font-size: 2em;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.text-content p {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-img {
-  width: 100%;  /* Make image full width of container -->
-  object-fit: cover;
-  margin-top: 30px;  /* Add 30px space between text and image -->
-}
-
-hr {
-  display: none;  /* Hide the horizontal divider line -->
-}
