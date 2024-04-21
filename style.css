@@ -130,7 +130,24 @@ nav a i {
 hr {
   display: none;
 }
+/* Existing CSS styles */
 
+/* ... */
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%; /* Adjust as needed for phone layout */
+  }
+  .new-section .text-content h1 {
+    font-size: 1.5em;  /* Adjust font size for smaller screens */
+  }
+  .new-section .text-content p {
+    font-size: 14px;  /* Adjust font size for smaller screens */
+  }
+  .new-section img {
+    margin-top: 20px;  /* Adjust spacing for smaller screens */
+  }
+}
 /* Existing styles for header and footer (replace with your actual styles) */
 
 .new-section {
@@ -177,7 +194,6 @@ img {
 hr {
   display: none;  /* Hide the horizontal divider line -->
 }
-
 
 
 
