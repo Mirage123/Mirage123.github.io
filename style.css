@@ -150,47 +150,15 @@ hr {
 }
 /* Existing styles for header and footer (replace with your actual styles) */
 
-.new-section {
+.text-container {
   background-color: #FFDADA;
-  padding: 50px 0;
+  padding: 20px;
+  text-align: center;
 }
 
-.container {
-  max-width: 1000px;
+.text-container img {
+  display: block;
   margin: 0 auto;
-  display: flex; /* Change to flex for side-by-side layout */
-  justify-content: space-between; /* Distribute elements horizontally */
-}
-
-.new-section .text-content {
-  flex: 0 0 auto;  /* Remove flex grow to prevent content from shrinking */
-  width: 50%;  /* Set width for text content */
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center text content vertically */
-}
-
-.new-section .text-content h1 {
-  font-family: Arial, sans-serif;
-  font-size: 2em; /* Maintain font size */
-  margin-bottom: 15px;
-  text-align: left; /* Align text to the left */
-}
-
-.new-section .text-content p {
-  font-family: Arial, sans-serif;
-  font-size: 16px; /* Maintain font size */
-  line-height: 1.5;
-  text-align: left; /* Align text to the left */
-}
-
-.new-section img {
-  width: 50%;  /* Set width for image */
-  object-fit: cover;
-  margin-top: 30px; /* Add 30px space between text and image -->
-}
-
-hr {
-  display: none; /* Hide the horizontal divider line */
+  width: 100%;
+  height: auto;
 }
